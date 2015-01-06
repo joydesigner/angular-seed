@@ -12,9 +12,11 @@
     My Wish List Count: {{wishListCount}}
     <ul>
         <li ng-repeat="book in books">
-            {{book}}.<a href="#" ng-click></a>
+            {{book}}.<a href="#" ng-click="addToWishList(book)">Add to Wish List</a>
         </li>
     </ul>
+    <input type="text" ng-model="input.name"/>
+    <div>{{input.name}}</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.js"></script>
 <script src="js/app.js"></script>
